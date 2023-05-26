@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { StaticList, StatisticItem } from './Statistics.styled';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
-  <ul>
-    <li>Good: {good}</li>
-    <li>Neutral: {neutral}</li>
-    <li>Bad: {bad}</li>
-    <li>Total: {total}</li>
-    <li>Positive feedback: {positivePercentage}%</li>
-  </ul>
+  <StaticList>
+    <StatisticItem>Good: {good}</StatisticItem>
+    <StatisticItem>Neutral: {neutral}</StatisticItem>
+    <StatisticItem>Bad: {bad}</StatisticItem>
+    <StatisticItem>Total: {total}</StatisticItem>
+    <StatisticItem>Positive feedback: {positivePercentage}%</StatisticItem>
+  </StaticList>
 );
 
 export default Statistics;

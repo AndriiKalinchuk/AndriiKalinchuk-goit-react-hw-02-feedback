@@ -7,20 +7,22 @@ export const StaticList = styled.ul`
 
   border-radius: 4px;
   box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
-  background-color: #d8e0ff;
+  background-color: #d5daeb;
 `;
 
-export const DescrStatistics = styled.p`
+export const StatisticItem = styled.li`
+  font-size: 18px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
 
   margin: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 14px;
 
-  color: #6f31ff;
+  color: #1d0e41;
+
   cursor: pointer;
 `;

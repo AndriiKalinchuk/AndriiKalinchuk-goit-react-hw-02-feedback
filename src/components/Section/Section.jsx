@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { SectionWrapper } from './Section.styled';
 
 const Section = ({ title, children }) => (
-  <div>
+  <SectionWrapper>
     <h2>{title}</h2>
     {children}
-  </div>
+  </SectionWrapper>
 );
 
 export default Section;

@@ -1,18 +1,18 @@
 import React from 'react';
-import PropTypes, { arrayOf } from 'prop-types';
-
+import PropTypes from 'prop-types';
+import { BtnDiv, Button } from './FeedbackOptions.styled';
 const FeedbackOptions = ({ onLeaveFeedback }) => (
-  <div>
-    <button type="button" onClick={() => onLeaveFeedback('good')}>
+  <BtnDiv>
+    <Button type="button" onClick={() => onLeaveFeedback('good')}>
       Good
-    </button>
-    <button type="button" onClick={() => onLeaveFeedback('neutral')}>
+    </Button>
+    <Button type="button" onClick={() => onLeaveFeedback('neutral')}>
       Neutral
-    </button>
-    <button type="button" onClick={() => onLeaveFeedback('bad')}>
+    </Button>
+    <Button type="button" onClick={() => onLeaveFeedback('bad')}>
       Bad
-    </button>
-  </div>
+    </Button>
+  </BtnDiv>
 );
 
 export default FeedbackOptions;

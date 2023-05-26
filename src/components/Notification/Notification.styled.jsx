@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const Msg = styled.h2`
+export const Message = styled.h2`
   margin-bottom: 16px;
   text-align: center;
-  color: #a6b3ff;
-  font-size: 12px;
+  color: #6e79ba;
+  font-size: 16px;
 `;
